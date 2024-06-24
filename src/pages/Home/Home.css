@@ -1,0 +1,68 @@
+.home{
+    padding-top: 40px;
+    background: url(./../../assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  @media (max-width:780px) {
+        min-height: initial;
+     }
+}
+.home-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 12vw;
+    @media (max-width:780px) {
+       flex-direction: column;
+       text-align: center;
+       gap: 70px;
+        }
+}
+.home-content{
+    width: 30vw;
+    @media (max-width:780px) {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 50px;
+
+        }
+}
+.home-content span{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    color: var(--primary-text);
+}
+.home-content h1{
+    font-size: 140px;
+    font-family: "Bellefair", sans-serif;
+    font-weight: 300;
+    padding-top: 10px;
+}
+.home-content p{
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0;
+    color: var(--primary-text);
+}
+button{
+    padding: 100px 50px;
+    border-radius: 100%;
+    border: none;
+    font-size: 32px;
+    font-family: "Bellefair", sans-serif;
+    font-weight: 400;
+    transition: 0.5s;
+}
+button:hover{
+    box-shadow: 0 0 0px 60px rgba(255, 255, 255, 0.103);
+    color: rgb(103, 103, 103);
+}
+button:active{
+    box-shadow: 0 0 0px 00px rgba(255, 255, 255, 0.103);
+    color: rgb(103, 103, 103);
+}

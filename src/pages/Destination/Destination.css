@@ -1,0 +1,108 @@
+.destination{
+    background-image: url(../../assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px 0px 60px 0;
+}
+.destination img{
+    transform: scale(0.8);
+}
+ .title{
+    font-family: "Barlow Condensed";
+    font-size: 28px;
+    color: white;
+    font-weight: lighter;
+    position: relative;
+    left: 13%;
+    margin-top: 15px;
+}
+h1 span{
+    color: rgba(255, 255, 255, 0.395);
+    margin-right: 12px;
+}
+.content{
+    width: 450px;
+}
+hr{
+    margin: 30px 0;
+    border: 1px solid rgba(255, 255, 255, 0.179);
+}
+.tab-content{
+    display: flex;
+    align-items: start;
+    padding: 0%;
+    gap: 32px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--primary-text);
+}
+.tab-item{
+    position: relative;
+    transition: 2s;
+}
+.destination-active::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    background-color: white;
+}
+.tab-item:hover::after{
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.404);
+}
+.destination-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70vw;
+    align-self: center;
+}
+.destination-main h2{
+    margin: 30px 0 10px 0;
+    font-size: 96px;
+    font-family: "Bellefair", sans-serif;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+
+}
+.destination-main p{
+    font-size: 18px;
+    font-family: "Barlow";
+    color: var(--primary-text);
+    font-weight: lighter;
+}
+.destination-sub-menu{
+    display: flex;
+    gap: 80px;
+}
+.distance{
+    text-transform: uppercase;
+}
+.distance h3{
+    font-family: "Barlow Condensed";
+    font-size: 14px;
+    color: var(--primary-text);
+    font-weight: lighter;
+}
+.distance p{
+    font-family: "Bellefair";
+    font-size: 28px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 200;
+}
